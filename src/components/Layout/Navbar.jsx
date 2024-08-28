@@ -7,6 +7,7 @@ import LoginLink from "../Links/LoginLink";
 import { GiGiftOfKnowledge } from "react-icons/gi";
 import { TbPhoneCall } from "react-icons/tb";
 import LoginButton from "../modal/LoginButton";
+import ContactUs from "../modal/ContactUs";
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -47,11 +48,12 @@ const Navbar = () => {
                 </button>
               </Link> */}
               <LoginButton/>
-              <Link>
+              {/* <Link>
                 <button className="bg-[#013032] flex hover:bg-[#6c7879] justify-center gap-2 items-center rounded-full p-2">
                   <TbPhoneCall className="text-[24px]" />
                 </button>
-              </Link>
+              </Link> */}
+              <ContactUs/>
             </div>
           </div>
         </nav>

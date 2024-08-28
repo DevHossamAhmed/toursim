@@ -81,21 +81,40 @@ button {
 button:hover {
   background: rgba(0, 0, 0, 0.8);
 }
+
+
 /* --------------- */
 
 .textModale {
   color: white !important;
   background-color: #013032 !important;
   border: none;
-  border-radius: 5px; 
-  cursor: pointer; 
+  border-radius: 5px;
+  cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .textModale:hover {
-  background-color: #014f53 !important; 
+  background-color: #014f53 !important;
 }
 
-.mainAccordion{
+.textContact {
+  color: white !important;
+  background-color: #013032 !important;
+  border-radius: 50% !important;
+  width:50px !important;
+  height:50px !important;
+  padding: 0 !important;
+  font-sizing:20px !important;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.textContact:hover {
+  background-color: #014f53 !important;
+}
+
+
+.mainAccordion {
   background-color: #013032 !important;
 }
