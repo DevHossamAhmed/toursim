@@ -19,7 +19,6 @@ const Footer = () => {
       <FrequentlyAskedQuestions />
       <Container>
         <div className="w-full flex flex-col xl:flex-row py-3 items-center justify-between">
-
           <div className="flex  gap-4 xl:gap-8  items-center  cursor-pointer text-end left-0">
             <Link
               href="https://ia.edu.sa/call"
@@ -70,12 +69,10 @@ const Footer = () => {
                 href={"/"}
                 className="flex text-[12px] sm:text-[14px] text-[#82D9Bf] items-center gap-1"
               >
-                 البرنامج التدريبي للارشاد السياحي
+                البرنامج التدريبي للارشاد السياحي
                 <AiOutlineCopyrightCircle />
-                2023-2024
               </Link>
             </div>
-
           </div>
           <div></div>
         </div>
