@@ -43,54 +43,59 @@ export default function MainButton() {
         onClose={handleClose}
         aria-labelledby="parent-modal-title"
         aria-describedby="parent-modal-description"
+        className="rounded-md"
       >
-        <Box sx={{ ...style }}>
-          <div className="w-full max-w-md">
+        <Box sx={{ ...style }} className="rounded-md">
+          <div className="w-full max-w-md rounded-md">
             <h3 className="text-center text-[22px] font-medium pt-[50px] pb-[30px]">
-              تسجيل الدخول
+              سياسة البرنامج
             </h3>
-            <form
-              action=""
-              className="bg-white w-full m-auto p-10 rounded-md mb-10"
-            >
-              <input
-                type="text"
-                placeholder="اسم المستخدم"
-                className="border-2 text-black w-full p-3 rounded-md focus:outline-none"
-              />
-              <input
-                type="password"
-                placeholder="ادخل كلمة المرور"
-                className="border-2 text-black w-full mt-5 p-3 rounded-md focus:outline-none"
-              />
-              <button
-                type="submit"
-                className="bg-[#856edb] w-full flex my-[15px] hover:bg-[#9b85ec] justify-center gap-2 items-center rounded-xl py-2 px-3"
-              >
-                تسجيل الدخول
+            <div>
+              <ul className="pb-[15px] text-[16px]">
+                <li className="pb-[8px]">
+                  - الالتزام بحضور البرنامج التدريبي كاملا بجزئيه النظري والعملي
+                </li>
+                <li className="pb-[8px]">- الالتزام بأوقات الجلسات التدريبية وأماكن إقامتها</li>
+                <li className="pb-[8px]">
+                  - تقديم كامل الواجبات والاختبارات المؤهلة للحصول على الشهادة
+                </li>
+                <li className="pb-[8px]">- الالتزام بآداب التواصل مع المدرب والمتدربين</li>
+                <li className="pb-[8px]">
+                  - المشاركة الإيجابية خلال البرنامج والتعاون مع أعضاء البرنامج
+                </li>
+                <li className="pb-[8px]">
+                  - اتباع التوجيهات المقدمة من قبل منسق البرنامج التأهيلي.
+                </li>
+                <li>
+                  - المشاركة في قياس أثر التدريب والتغذية الراجعة للمتدربين
+                </li>
+                <li className="pb-[8px]">
+                  - الرجوع إلى مقدم الخدمة في حال الحاجة للدعم أو إبداء أي
+                  ملاحظة
+                </li>
+                <li className="pb-[8px]">
+                  - يمنع استخدام قنوات التواصل الرسمية وغير الرسمية بطريقة سلبية
+                  تجاه البرنامج أو أحد أعضاءه
+                </li>
+              </ul>
+            </div>
+            <div className="pb-[15px] text-[16px]">
+              <h3 className="pb-[8px] text-[20px]">سياسة الغياب و الحضور :</h3>
+              <p>
+                يتم الاستبعاد من البرنامج في حالة غياب 14% من مدة البرنامج او
+                تأخير باجمالي ساعة واحدة خلال مدة البرنامج كاملة
+              </p>
+            </div>
+            <div className="w-full flex justify-center gap-5 my-[15px]">
+              <Link href="https://ia.edu.sa/tourism/booking/personality-traits-test">
+                <button className=" textModale w-[200px] text-[18px] font-medium flex hover:bg-[#9b85ec] justify-center gap-2 items-center rounded-xl py-2 px-3">
+                  قبول الاتفاقية
+                </button>
+              </Link>
+              <button onClick={handleClose} className=" textModale w-[200px] text-[18px] font-medium flex hover:bg-[#9b85ec] justify-center gap-2 items-center rounded-xl py-2 px-3">
+                رفض الاتفاقية{" "}
               </button>
-              <button
-                type="submit"
-                className="bg-[#856edb] w-full flex hover:bg-[#9b85ec] justify-center gap-2 items-center rounded-xl py-2 px-3"
-              >
-                تسجيل حساب جديد
-              </button>
-              <hr />
-              <div className="flex flex-col text-center mt-4">
-                <Link
-                  href="#"
-                  className="text-[#0d6efd] text-[16px] font-medium underline"
-                >
-                  نسيت اسم المستخدم او كلمة المرور ؟
-                </Link>
-                <Link
-                  href="#"
-                  className="text-[#0d6efd] text-[16px] font-medium underline"
-                >
-                  تغير رقم الجوال
-                </Link>
-              </div>
-            </form>
+            </div>
           </div>
         </Box>
       </Modal>
