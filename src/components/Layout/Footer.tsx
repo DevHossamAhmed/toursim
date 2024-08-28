@@ -9,10 +9,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineCopyrightCircle } from "react-icons/ai";
 import { BiLogoFacebook } from "react-icons/bi";
-import mada from "../../assets/images/mada.jpg";
-import visa from "../../assets/images/visa.png";
-import mastercard from "../../assets/images/mastercard.png";
-import tabby from "../../assets/images/tabby.png";
+
 import Container from "../Container";
 import FrequentlyAskedQuestions from "../frequently-asked-questions/FrequentlyAskedQuestions";
 
@@ -73,16 +70,12 @@ const Footer = () => {
                 href={"/"}
                 className="flex text-[12px] sm:text-[14px] text-[#82D9Bf] items-center gap-1"
               >
+                 البرنامج التدريبي للارشاد السياحي
                 <AiOutlineCopyrightCircle />
-                2005-2024 اكاديمية الاستثمار
+                2023-2024
               </Link>
             </div>
-            <div className=" flex gap-3 items-center justify-center">
-              <Image src={tabby} alt="" width={30} />
-              <Image src={mada} alt="" width={30} />
-              <Image src={mastercard} alt="" width={30} />
-              <Image src={visa} alt="" width={30} />
-            </div>
+
           </div>
           <div></div>
         </div>
