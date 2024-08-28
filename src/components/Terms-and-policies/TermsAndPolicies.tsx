@@ -5,9 +5,9 @@ import Container from "../Container";
 
 const TermsAndPolicies = () => {
   return (
-    <div id="TermsAndPolicies" className="w-full text-white">
+    <div id="TermsAndPolicies" className="w-full py-6 text-white">
       <Container>
-        <h2 className="text-[40px] text-[#82D9Bf] font-bold    py-[20px]">
+        <h2 className="text-start text-[32px] text-[#82D9Bf] font-medium">
           أهداف البرنامج{" "}
         </h2>
         <div className="py-9 flex justify-center gap-8 flex-col lg:flex-row ">
