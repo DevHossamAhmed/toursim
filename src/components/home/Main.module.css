@@ -1,0 +1,52 @@
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  height:650px;
+}
+
+.slideContainer {
+  position: relative;
+  overflow: hidden;
+  height:650px;
+}
+
+.slideImage {
+  width: 100%;
+  height: 650px;
+  object-fit: cover; /* لضمان تغطية الصورة بشكل كامل */
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* تأثير التعتيم */
+  display: flex;
+  flex-direction: column; /* ترتيب العناصر عمودياً */
+  align-items: flex-end; /* محاذاة العناصر إلى اليمين */
+  justify-content: center; /* محاذاة العناصر إلى الوسط عمودياً */
+  padding: 20px; /* المسافة بين النص وحافة الصورة */
+}
+
+.slideText {
+  display: flex;
+  flex-direction: column; /* لترتيب النص والعنوان عمودياً */
+  align-items: flex-end; /* لمحاذاة النص والعنوان إلى اليمين */
+  color: white; /* لون النص */
+  text-align: right; /* محاذاة النص من اليمين */
+  padding: 20px; /* لتحديد المسافة الداخلية */
+  font-size: 70px; /* حجم الخط */
+}
+
+.slideTitle {
+  margin-top: 10px; /* المسافة بين النص والعنوان */
+  margin-bottom: 10px; /* المسافة بين النص والعنوان */
+}
+
+
+
+.mainButtonContainer {
+  margin-bottom: 20px; /* المسافة بين الزر والنص */
+}
